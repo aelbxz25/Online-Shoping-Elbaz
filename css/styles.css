@@ -340,41 +340,72 @@ body > nav a {
     text-transform: uppercase;
     letter-spacing: 2px;
 }
-#sec-9 {
-    background-color: black;
-    color: white;
+
+footer {
+    background-color: #04091d;
+    text-align: center;
 }
-#sec-9 .container {
-    padding-top: 20px;
-    padding-bottom: 20px;
+.footer-flex {
     display: flex;
-    flex-flow: row wrap;
-    align-items: flex-start;
+    flex-wrap: wrap;
     justify-content: space-between;
 }
-#sec-9 a {
-    display: block;
-    margin-bottom: 2px;
-    text-decoration: none;
-    color: white;
-    padding-bottom: 10px;
+
+.footer-block:first-of-type {
+    margin-top: 3rem;
 }
-#sec-9 form input {
+
+.footer-block {
+    width: 100%;
+}
+
+.footer-block:last-of-type {
+    margin-right: 0;
+    margin-bottom: 3rem;
+}
+
+.footer-block h5 {
+    font-size: 1.8rem;
+    margin-bottom: 1.2rem;
+    color: gold;
+}
+
+.footer-block ul {
+    list-style: none;
+}
+
+.footer-block ul li {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #777;
+}
+
+footer p {
+    color: #777;
+    font-size: 1.5rem;
+    text-align: center;
+    margin-bottom: 1.2rem;
+    display: inline-block;
+}
+
+footer .footer-block p {
+    text-align: left;
+    margin-bottom: 2.4rem;
+}
+
+.footer-block input {
+    width: 80%;
     border: none;
-    border-bottom: thin solid white;
-    outline: none;
-    color: white;
-    margin-bottom: 12px;
-    background-color: transparent;
+    height: 30px;
+    padding: 5px;
 }
-#sec-9 form button {
+
+.footer-block button {
+    width: 10%;
     border: none;
-    outline: none;
-    padding: 10px 30px;
-    border-radius: 40px;
-}
-#sec-9 div img {
-    margin-bottom: 12px;
+    height: 30px;
+    background-color: #f9b700;
+    color: #fff;
 }
 
 @media (min-width: 576px) {
@@ -429,6 +460,10 @@ body > nav a {
         margin-bottom: 5px;
         margin-top: 5px;
     }
+    .footer-block {
+        width: 45%;
+        margin-top: 3rem;
+    }
 }
 @media (min-width: 992px) {
     .container {
@@ -473,6 +508,12 @@ body > nav a {
 
     #sec-6 h2 {
         margin-bottom: 0;
+    }
+    .footer-block {
+        width: 20%;
+    }
+    footer .clear-fix {
+        margin-top: 1.6rem;
     }
 }
 @media (min-width: 1200px) {
